@@ -115,6 +115,14 @@ img {
   }
 }
 
+@media (max-width: 542px) {
+  .contact-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
 /* BTN */
 
 .btn {
