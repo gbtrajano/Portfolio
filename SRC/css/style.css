@@ -9,6 +9,14 @@
   --font-base: "Poppins";
 }
 
+::-webkit-scrollbar {
+  background-color: var(--color-base2);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-brand);
+}
+
 * {
   padding: 0;
   margin: 0;
