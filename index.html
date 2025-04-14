@@ -1,596 +1,316 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- BOOTSTRAP link -->
-    <link rel="stylesheet" href="SRC/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
-    />
+    <!-- FAVICON -->
+     <link rel="shortcut icon" href="SRC/imgs/favicon.png" type="image/x-icon">
+    <!-- /FAVICON -->
 
-    <!-- Css Link -->
-    <link rel="stylesheet" href="SRC/css/style.css" />
+    <!-- POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- /POPPINS -->
 
-    <link rel="shortcut icon" href="SRC/imgs/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
 
-    <!-- Font Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,100&display=swap"
-      rel="stylesheet"
-    />
 
-    <title>Portfolio</title>
-  </head>
-
-  <!-- Body Content -->
-  <body data-bs-spy="scroll" data-bs-target=".navbar">
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container flex-lg-column">
-        <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
-          <span class="h3 fw-bold d-block d-lg-none">Gabriel Trajano</span>
-          <img
-            src="SRC/imgs/myPhoto.jpeg"
-            class="d-none d-lg-block rounded-circle"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Início</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Serviços</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#work">Trabalho</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#reviews">Feedbacks</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#blog">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contato</a>
-            </li>
-          </ul>
+    <title>Gabriel Trajano | Portfólio</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="profile">
+                <div class="profile-image">GT</div>
+                <h1 class="name">Gabriel Trajano</h1>
+                <p class="title">Operador de Suporte Técnico em T.I</p>
+            </div>
         </div>
-      </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#sobre" class="nav-link">Sobre</a>
+            <a href="#habilidades" class="nav-link">Habilidades</a>
+            <a href="#experiencia" class="nav-link">Experiência</a>
+            <a href="#academico" class="nav-link">Acadêmico</a>
+            <a href="#cursos" class="nav-link">Cursos</a>
+            <a href="#projetos" class="nav-link">Projetos</a>
+            <a href="#contato" class="nav-link">Contato</a>
+        </div>
     </nav>
-    <!-- //NAVBAR -->
 
-    <!-- CONTENT WRAPPER -->
-    <div id="content-wrapper">
-      <!-- HOME -->
-      <section id="home" class="full-height px-lg-5">
+    <section id="sobre">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-10">
-              <h1 class="display-4 fw-bold">
-                OLÁ, ME CHAMO <span class="text-brand">GABRIEL TRAJANO</span>
-              </h1>
-              <p class="lead mt-2 mb-4">
-                Apaixonado por tecnologia, atualmente trabalhando no mercado
-                transformando ideias em soluções inovadoras. Sempre em busca de
-                novos desafios, acredita no poder da tecnologia para moldar o
-                futuro.
-              </p>
-              <div class="contact-div">
-                <a href="#work" class="btn btn-brand me-3"
-                  >Veja o meu Trabalho</a
-                >
-                <!-- <a href="#" class="link-custom">Ligue: (21) 98244-6702</a> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- //HOME -->
-
-      <!-- SERVICES -->
-      <section id="services" class="full-height px-lg-5">
-        <div class="container">
-          <div class="row pb-4">
-            <div class="col-lg-8">
-              <h6 class="text-brand">SERVIÇOS</h6>
-              <h1>Meus Serviços</h1>
-            </div>
-          </div>
-
-          <div class="row gy-4">
-            <div class="col-md-4">
-              <div class="service p-4 bg-base rounded-4 shadow-effect">
-                <div class="iconbox rounded-4">
-                  <i class="las la-wifi"></i>
-                </div>
-                <h5 class="mt-4 mb-2">Redes</h5>
+            <div class="glow glow-1"></div>
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
                 <p>
-                  Área da informática que estuda a interconexão de dispositivos
-                  para comunicação e compartilhamento de recursos.
+                    Olá! Sou Gabriel Trajano, tenho 21 anos e atuo na área de Tecnologia da Informação.
+                    Atualmente trabalho como Operador de Suporte Técnico em T.I na IC Supply, onde desenvolvo
+                    soluções práticas para problemas complexos e aprimoro minhas habilidades técnicas diariamente.
+                    Sou apaixonado por tecnologia e estou constantemente buscando novos conhecimentos para evoluir 
+                    profissionalmente.
                 </p>
-                <a href="#" class="link-custom">Saiba Mais</a>
-              </div>
             </div>
-
-            <div class="col-md-4">
-              <div class="service p-4 bg-base rounded-4 shadow-effect">
-                <div class="iconbox rounded-4">
-                  <i class="las la-mobile"></i>
-                </div>
-                <h5 class="mt-4 mb-2">Manutenção de Dispositivos Móveis</h5>
-                <p>Área que se dedica à reparação de smartphones e tablets.</p>
-                <a href="#" class="link-custom">Saiba Mais</a>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="service p-4 bg-base rounded-4 shadow-effect">
-                <div class="iconbox rounded-4">
-                  <i class="las la-marker"></i>
-                </div>
-                <h5 class="mt-4 mb-2">Design</h5>
-                <p>
-                  Área que se dedica à criação de elementos visuais para
-                  transmitir mensagens.
-                </p>
-                <a href="#" class="link-custom">Saiba Mais</a>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
-      <!-- //SERVICES -->
+    </section>
 
-      <!-- WORK -->
-      <section id="work" class="full-height px-lg-5">
+    <section id="habilidades">
         <div class="container">
-          <div class="row pb-4">
-            <div class="col-lg-8">
-              <h6 class="text-brand">Trabalho</h6>
-              <h1>Projetos Recentes</h1>
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-container">
+                <span class="skill-tag">Suporte Técnico</span>
+                <span class="skill-tag">Redes</span>
+                <span class="skill-tag">Hardware</span>
+                <span class="skill-tag">Windows</span>
+                <span class="skill-tag">Linux</span>
+                <span class="skill-tag">Help Desk</span>
+                <span class="skill-tag">Manutenção de Computadores</span>
+                <span class="skill-tag">Resolução de Problemas</span>
+                <span class="skill-tag">Atendimento ao Cliente</span>
+                <span class="skill-tag">Trabalho em Equipe</span>
             </div>
-          </div>
-
-          <div class="row gy-4">
-            <div class="col-md-6">
-              <div class="card-custom rounded-4 bg-base shadow-effect">
-                <div class="card-custom-image rounded-4">
-                  <img src="SRC/imgs/library.jpg" class="rounded-4" />
-                </div>
-                <div class="card-custom-content p-4">
-                  <h4>Biblioteca Virtual</h4>
-                  <p>Projeto que fiz no meu TCC do Senai.</p>
-                  <a
-                    href="https://github.com/gaabrzx/Biblioteca-Online"
-                    target="_blank"
-                    class="link-custom"
-                    >Ver Projeto</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card-custom rounded-4 bg-base shadow-effect">
-                <div class="card-custom-image rounded-4">
-                  <img src="SRC/imgs/notfinished.png" class="rounded-4" />
-                </div>
-                <div class="card-custom-content p-4">
-                  <h4>Em Breve...</h4>
-                  <p>Em desenvolvimento...</p>
-                  <a href="#" class="link-custom">Saiba Mais</a>
-                </div>
-              </div>
-            </div>
-            <!-- <div class="col-md-6">
-              <div class="card-custom rounded-4 bg-base shadow-effect">
-                <div class="card-custom-image rounded-4">
-                  <img
-                    src="https://loremflickr.com/400/300?random=1"
-                    class="rounded-4"
-                  />
-                </div>
-                <div class="card-custom-content p-4">
-                  <h4>Startup Landing Page</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolores, quia.
-                  </p>
-                  <a href="#" class="link-custom">Saiba Mais</a>
-                </div>
-              </div>
-            </div> -->
-            <!-- <div class="col-md-6">
-              <div class="card-custom rounded-4 bg-base shadow-effect">
-                <div class="card-custom-image rounded-4">
-                  <img
-                    src="https://loremflickr.com/400/300?random=1"
-                    class="rounded-4"
-                  />
-                </div>
-                <div class="card-custom-content p-4">
-                  <h4>Startup Landing Page</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolores, quia.
-                  </p>
-                  <a href="#" class="link-custom">Saiba Mais</a>
-                </div>
-              </div>
-            </div> -->
-          </div>
         </div>
-      </section>
-      <!-- //WORK -->
+    </section>
 
-      <!-- ABOUT -->
-      <section id="about" class="full-height px-lg-5">
+    <section id="experiencia">
         <div class="container">
-          <div class="row pb-4">
-            <div class="col-lg-8">
-              <h6 class="text-brand">SOBRE</h6>
-              <h1>Minha Experiência e Educação</h1>
+            <div class="glow glow-2"></div>
+            <h2 class="section-title">Experiência Profissional</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">FEV 2024 - Atual</div>
+                    <h3 class="timeline-title">Operador de Suporte Técnico em T.I</h3>
+                    <h4 class="timeline-subtitle">IC Supply</h4>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Atendimento de chamados de suporte técnico para usuários Internos e Externos</li>
+                            <li>Manutenção preventiva e corretiva de Hardware e Software</li>
+                            <li>Configuração e gerenciamento de Redes Locais</li>
+                            <li>Implementação de soluções para Otimização de Processos</li>
+                            <li>Documentação de Procedimentos Técnicos</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div class="row gy-5">
-            <div class="col-lg-6">
-              <h3 class="mb-4">Experiência</h3>
-              <div class="row gy-4">
-                <div class="col-12">
-                  <div class="bg-base p-4 rounded-4 shadow-effect">
-                    <h4>Suporte Técnico em T.I</h4>
-                    <p class="text-brand mb-2">
-                      IC SUPPLY ENGENHARIA (2023 - 2025)
-                    </p>
-                    <p class="mb-0">
-                      Responsável por auxiliar os usuários na resolução de
-                      problemas relacionados a hardware, software e redes.
-                    </p>
-                  </div>
-                </div>
-                <!-- <div class="col-12">
-                  <div class="bg-base p-4 rounded-4 shadow-effect">
-                    <h4>Gestão Empresarial</h4>
-                    <p class="text-brand mb-2">Fusão (96 Horas)</p>
-                    <p class="mb-0">
-                      Área que se dedica à administração de empresas, buscando
-                      otimizar processos, aumentar a lucratividade e alcançar os
-                      objetivos organizacionais.
-                    </p>
-                  </div>
-                </div> -->
-                <!-- <div class="col-12">
-                  <div class="bg-base p-4 rounded-4 shadow-effect">
-                    <h4>Informática Profissional</h4>
-                    <p class="text-brand mb-2">Fusão (96 Horas)</p>
-                    <p class="mb-0">
-                      Área que abrange o desenvolvimento, implantação e suporte
-                      de sistemas de informação, hardware e software.
-                    </p>
-                  </div>
-                </div> -->
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <h3 class="mb-4">Educação</h3>
-              <div class="row gy-4">
-                <div class="col-12">
-                  <div class="bg-base p-4 rounded-4 shadow-effect">
-                    <h4>Inglês Avançado</h4>
-                    <p class="text-brand mb-2">
-                      Wizard (140 horas + 192 horas)
-                    </p>
-                    <p class="mb-0">
-                      Compreensão e produção de textos e conversas em inglês,
-                      com vocabulário e gramática diversificados.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="bg-base p-4 rounded-4 shadow-effect">
-                    <h4>Gestão Empresarial</h4>
-                    <p class="text-brand mb-2">Fusão (96 Horas)</p>
-                    <p class="mb-0">
-                      Área que se dedica à administração de empresas, buscando
-                      otimizar processos, aumentar a lucratividade e alcançar os
-                      objetivos organizacionais.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="bg-base p-4 rounded-4 shadow-effect">
-                    <h4>Informática Profissional</h4>
-                    <p class="text-brand mb-2">Fusão (96 Horas)</p>
-                    <p class="mb-0">
-                      Área que abrange o desenvolvimento, implantação e suporte
-                      de sistemas de informação, hardware e software.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
-      <!-- //ABOUT -->
+    </section>
 
-      <!-- REVIEWS -->
-      <section id="reviews" class="full-height px-lg-5">
+    <section id="academico">
         <div class="container">
-          <div class="row pb-4">
-            <div class="col-lg-8">
-              <h6 class="text-brand">FEEDBACKS</h6>
-              <h1>O que meus parceiros dizem:</h1>
+            <h2 class="section-title">Formação Acadêmica</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - Atual</div>
+                    <h3 class="timeline-title">Graduação em Análise e Desenvolvimento de Sistemas</h3>
+                    <h4 class="timeline-subtitle">Universidade Estácio de Sá</h4>
+                    <div class="timeline-content">
+                        <p>Cursando o 3º ano com foco em desenvolvimento de software e segurança da informação.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 - 2021</div>
+                    <h3 class="timeline-title">Ensino Médio</h3>
+                    <h4 class="timeline-subtitle">Colégio Estadual Presidente Kennedy</h4>
+                    <div class="timeline-content">
+                        <p>Formação técnica com ênfase em Empreendedorismo.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2016 - 2019</div>
+                    <h3 class="timeline-title">Ensino Fundamental</h3>
+                    <h4 class="timeline-subtitle">Instituto Educacional Sol de Verão</h4>
+                    <div class="timeline-content">
+                        <p>Formação concluída.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div class="row gy-4">
-            <div class="col-md-4">
-              <div class="review shadow-effect bg-base p-4 rounded-4">
-                <div class="text-brand h5">
-                  <i class="las la-star"></i>
-                  <i class="las la-star"></i>
-                  <i class="las la-star"></i>
-                  <i class="las la-star"></i>
-                  <i class="las la-star"></i>
-                </div>
-                <p class="my-3">
-                  Homem consistente em aprendizagem, Admiro muito isso nele.
-                </p>
-                <div class="person">
-                  <h5
-                    class="mb-0"
-                    onclick="redirect('https://www.instagram.com/olvrxj_/')"
-                  >
-                    Jheniffer Conceição
-                  </h5>
-                  <p
-                    class="mb-0"
-                    onclick="redirect('https://www.instagram.com/olvrxj_/')"
-                  >
-                    Instagram
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="review shadow-effect bg-base p-4 rounded-4">
-                <div class="text-brand h5">
-                  <i class="las la-star"></i>
-                  <i class="las la-star"></i>
-                  <i class="las la-star"></i>
-                  <i class="las la-star"></i>
-                  <i class="las la-star"></i>
-                </div>
-                <p class="my-3">
-                  Um ótimo profissional, Sempre pontual em suas tarefas e sempre
-                  prestativo naquilo que a ele é requisitado.
-                </p>
-                <div class="person">
-                  <h5 class="mb-0">Rodrigo Ferreira</h5>
-                  <p class="mb-0">Linkedin</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="review shadow-effect bg-base p-4 rounded-4">
-                <div class="text-brand h5">
-                  <i class="las la-star"></i>
-                  <i class="las la-star"></i>
-                  <i class="las la-star"></i>
-                  <i class="las la-star"></i>
-                  <i class="las la-star"></i>
-                </div>
-                <p class="my-3">
-                  Ótimo parceiro de equipe na IC Supply, Acredito que vai longe
-                  em cargos profissionais.
-                </p>
-                <div class="person">
-                  <h5 class="mb-0">Lucas Cardoso</h5>
-                  <p
-                    class="mb-0"
-                    onclick="redirect('https://www.instagram.com/lu.crdoso/')"
-                  >
-                    Instagram
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
-      <!-- //REVIEWS -->
+    </section>
 
-      <!-- BLOG -->
-      <section id="blog" class="full-height px-lg-5">
+    <section id="cursos">
         <div class="container">
-          <div class="row pb-4">
-            <div class="col-lg-8">
-              <h6 class="text-brand">BLOG</h6>
-              <h1>Meus Blogs</h1>
+            <h2 class="section-title">Cursos</h2>
+            <div class="course-carousel">
+                <button class="carousel-btn prev">❮</button>
+                <div class="carousel-track">
+                    <div class="course-slide">
+                        <div class="course-date">2024</div>
+                        <h3 class="course-title">OPERADOR DE SUPORTE TÉCNICO EM T.I</h3>
+                        <h4 class="course-subtitle">SENAI</h4>
+                        <div class="course-content">
+                            <p>Certificação em Operador e Suporte Técnico em T.I</p>
+                        </div>
+                    </div>
+                    <div class="course-slide">
+                        <div class="course-date">2024</div>
+                        <h3 class="course-title">SUPORTE TÉCNICO EM T.I</h3>
+                        <h4 class="course-subtitle">GOOGLE</h4>
+                        <div class="course-content">
+                            <p>Certificação em Operador e Suporte Técnico em T.I</p>
+                        </div>
+                    </div>
+                    <div class="course-slide">
+                        <div class="course-date">2021</div>
+                        <h3 class="course-title">INGLÊS</h3>
+                        <h4 class="course-subtitle">WIZARD</h4>
+                        <div class="course-content">
+                            <p>Certificação em Inglês Intermediário</p>
+                        </div>
+                    </div>
+                    <div class="course-slide">
+                        <div class="course-date">2021</div>
+                        <h3 class="course-title">GESTÃO EMPRESARIAL</h3>
+                        <h4 class="course-subtitle">FUSÃO</h4>
+                        <div class="course-content">
+                            <p>Certificação em Gestão Empresarial</p>
+                        </div>
+                    </div>
+                    <div class="course-slide">
+                        <div class="course-date">2021</div>
+                        <h3 class="course-title">INFORMÁTICA INTERMEDIÁRIA</h3>
+                        <h4 class="course-subtitle">FUSÃO</h4>
+                        <div class="course-content">
+                            <p>Certificação em Informática Intermediária</p>
+                        </div>
+                    </div>
+                    <div class="course-slide">
+                        <div class="course-date">2021</div>
+                        <h3 class="course-title">INGLÊS INTERMEDIÁRIO</h3>
+                        <h4 class="course-subtitle">FUSÃO</h4>
+                        <div class="course-content">
+                            <p>Certificação em Inglês Intermediário</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next">❯</button>
             </div>
-          </div>
-
-          <div class="row gy-4">
-            <div class="col-md-4">
-              <div class="card-custom rounded-4 bg-base shadow-effect">
-                <div class="card-custom-image rounded-4">
-                  <img src="SRC/imgs/notfinished.png" class="rounded-4" />
-                </div>
-                <div class="card-custom-content p-4">
-                  <p class="text-brand mb-2">20 Dec, 2024</p>
-                  <h5 class="mb-4">Em Breve...</h5>
-                  <a href="#" class="link-custom">Saiba Mais</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- <div class="col-md-4">
-              <div class="card-custom rounded-4 bg-base shadow-effect">
-                <div class="card-custom-image rounded-4">
-                  <img
-                    src="https://loremflickr.com/400/300?random=1"
-                    class="rounded-4"
-                  />
-                </div>
-                <div class="card-custom-content p-4">
-                  <p class="text-brand mb-2">20 Dec, 2024</p>
-                  <h5 class="mb-4">Como criar uma pagina com Bootstrap 5</h5>
-                  <a href="#" class="link-custom">Saiba Mais</a>
-                </div>
-              </div>
-            </div> -->
-
-            <!-- <div class="col-md-4">
-              <div class="card-custom rounded-4 bg-base shadow-effect">
-                <div class="card-custom-image rounded-4">
-                  <img
-                    src="https://loremflickr.com/400/300?random=1"
-                    class="rounded-4"
-                  />
-                </div>
-                <div class="card-custom-content p-4">
-                  <p class="text-brand mb-2">20 Dec, 2024</p>
-                  <h5 class="mb-4">Como criar uma pagina com Bootstrap 5</h5>
-                  <a href="#" class="link-custom">Saiba Mais</a>
-                </div>
-              </div>
-            </div> -->
-          </div>
         </div>
-      </section>
-      <!-- //BLOG -->
+    </section>
 
-      <!-- CONTACT -->
-      <section id="contact" class="full-height px-lg-5">
+    <section id="projetos">
         <div class="container">
-          <div class="row justify-content-center text-center">
-            <div class="col-lg-8 pb-4">
-              <h6 class="text-brand">CONTATO</h6>
-              <h1>Venha conversar!</h1>
+            <h2 class="section-title">Projetos</h2>
+            <div class="card-container">
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="card-title">Calculadora de Combustível</h3>
+                        <p class="card-subtitle">Projeto Profissional</p>
+                        <p class="card-text">
+                          Este projeto é uma aplicação web simples, que calcula o custo de combustível de acordo com a distância percorrida.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span>2024</span>
+                        <span>HTML, CSS, JAVASCRIPT</span>
+                    </div>
+                </div>
             </div>
-
-            <div class="col-lg-8">
-              <form action="#" class="row g-lg-3 gy-3">
-                <div class="form-group col-md-6">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Digite seu nome"
-                  />
-                </div>
-                <div class="form-group col-md-6">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Digite seu Email"
-                  />
-                </div>
-                <div class="form-group col-12">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Assunto"
-                  />
-                </div>
-                <div class="form-group col-12">
-                  <textarea
-                    name=""
-                    rows="4"
-                    class="form-control"
-                    placeholder="Escreva sua mensagem"
-                  ></textarea>
-                </div>
-                <div class="form-group col-12 d-grid">
-                  <button type="submit" class="btn btn-brand">Enviar</button>
-                </div>
-              </form>
-            </div>
-          </div>
         </div>
-      </section>
-      <!-- //CONTACT -->
+    </section>
 
-      <!-- FOOTER -->
-      <footer class="py-5 px-lg-5">
+    <section id="contato">
         <div class="container">
-          <div class="row gy-4 justify-content-between">
-            <div class="col-auto">
-              <p class="mb-0">© Gabriel Trajano, 2024</p>
+            <h2 class="section-title">Contato</h2>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" id="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Assunto</label>
+                        <input type="text" id="subject" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Mensagem</label>
+                        <textarea id="message" class="form-textarea" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7l-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"/>
+                        </svg>
+                        <span>gbtrajano1@gmail.com</span>
+                    </div>
+                    <!-- <div class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M20 10.999h2C22 5.869 18.127 2 12.99 2v2C17.052 4 20 6.943 20 10.999z"/>
+                            <path d="M13 8c2.103 0 3 .897 3 3h2c0-3.225-1.775-5-5-5v2zm3.422 5.443a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a1 1 0 0 0-.086-1.391l-4.064-3.696z"/>
+                        </svg>
+                        <span>(11) 98765-4321</span>
+                    </div> -->
+                    <div class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+                        </svg>
+                        <span>Rio de Janeiro, BR</span>
+                    </div>
+                </div>
             </div>
-            <div class="col-auto">
-              <div class="social-links">
-                <a href="https://www.linkedin.com/in/gbtrajano/"
-                  ><i class="lab la-linkedin"></i
-                ></a>
-                <a href="https://github.com/gaabrzx"
-                  ><i class="lab la-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
         </div>
-      </footer>
-      <!-- //FOOTER -->
-    </div>
-    <!-- //CONTENT WRAPPER -->
+    </section>
 
-    <!-- BS -->
-    <script src="SRC/js/bootstrap.bundle.min.js"></script>
-    <script src="SRC/js/script.js"></script>
+    <footer>
+        <div class="container">
+            <p>© 2025 Gabriel Trajano. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-      const redirect = (link) => {
-        window.open(link, "_blank");
-      };
-      -$(document).ready(function () {
-        // Add smooth scrolling to all links
-        $("a").on("click", function (event) {
-          // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
+        const carousel = document.querySelector('.course-carousel');
+        const track = carousel.querySelector('.carousel-track');
+        const slides = Array.from(track.children);
+        const prevBtn = carousel.querySelector('.prev');
+        const nextBtn = carousel.querySelector('.next');
+        const slideWidth = slides[0].getBoundingClientRect().width + 32; // Including margin
 
-            // Store hash
-            var hash = this.hash;
+        let currentIndex = 0;
 
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $("html, body").animate(
-              {
-                scrollTop: $(hash).offset().top,
-              },
-              800,
-              function () {
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-              }
-            );
-          } // End if
+        const updateCarousel = () => {
+            track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        };
+
+        const moveToNext = () => {
+            if (currentIndex < slides.length - 3) {
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            updateCarousel();
+        };
+
+        const moveToPrev = () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = slides.length - 3;
+            }
+            updateCarousel();
+        };
+
+        nextBtn.addEventListener('click', moveToNext);
+        prevBtn.addEventListener('click', moveToPrev);
+
+        // Auto-scroll every 5 seconds
+        let autoScroll = setInterval(moveToNext, 5000);
+
+        // Pause auto-scroll on hover
+        carousel.addEventListener('mouseenter', () => clearInterval(autoScroll));
+        carousel.addEventListener('mouseleave', () => {
+            autoScroll = setInterval(moveToNext, 5000);
         });
-      });
     </script>
-  </body>
+</body>
 </html>
