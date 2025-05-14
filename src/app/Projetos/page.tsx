@@ -1,14 +1,47 @@
+"use client";
+
 import Link from "next/link";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
+import "../globals.css";
+import { useState, useEffect } from "react";
+import { useGlobalClickSound } from "../../hooks/useGlobalClickSound";
 
 const page = () => {
+  useGlobalClickSound();
+  // Definindo o tipo do estado para a posição do cursor
+  const [position, setPosition] = useState<{ x: number; y: number }>({
+    x: 0,
+    y: 0,
+  });
+  const [isAnimating, setIsAnimating] = useState<boolean>(false);
+
+  useEffect(() => {
+    // Tipando o evento de mousemove
+    const handleMouseMove = (e: MouseEvent) => {
+      setPosition({ x: e.clientX, y: e.clientY });
+    };
+
+    document.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
+  // Tipando os eventos de mouse para os botões
+  const handleMouseEnter = () => setIsAnimating(true);
+  const handleMouseLeave = () => setIsAnimating(false);
   return (
     <main className="h-screen flex flex-col items-center relative">
+      <div
+        className={`custom-cursor ${isAnimating ? "animate" : ""}`}
+        style={{ left: `${position.x - 10}px`, top: `${position.y - 10}px` }}
+      />
       <header className="p-16 flex items-center justify-center gap-3 lg:gap-6">
         <Link href="/">
           <FaArrowAltCircleLeft
             fill="#00a0ff"
-            className="cursor-pointer text-3xl lg:text-5xl"
+            className="cursor-none text-3xl lg:text-5xl"
           />
         </Link>
         <h1 className="text-3xl md:text-5xl lg:text-6xl text-white font-extrabold text-center">
@@ -17,7 +50,11 @@ const page = () => {
       </header>
 
       <div className="flex items-center justify-center flex-col gap-4 md:grid md:grid-cols-3">
-        <div className="w-[350px] lg:w-[450px] md:w-[350px] p-6 border border-[#27344a] rounded-lg space-y-4 backdrop-blur-3xl opacity-80 hover:-translate-y-2 duration-500 cursor-pointer hover:backdrop-blur-sm hover:opacity-100 hover:border-[#445c85]">
+        <div
+          className="w-[350px] lg:w-[450px] md:w-[350px] p-6 border border-[#27344a] rounded-lg space-y-4 backdrop-blur-3xl opacity-80 hover:-translate-y-2 duration-500 hover:backdrop-blur-sm hover:opacity-100 hover:border-[#445c85]"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <div className="w-10">
@@ -163,7 +200,11 @@ const page = () => {
           </div>
         </div>
 
-        <div className="w-[350px] lg:w-[450px] md:w-[350px] p-6 border border-[#27344a] rounded-lg space-y-4 backdrop-blur-3xl opacity-80 hover:-translate-y-2 duration-500 cursor-pointer hover:backdrop-blur-sm hover:opacity-100 hover:border-[#445c85]">
+        <div
+          className="w-[350px] lg:w-[450px] md:w-[350px] p-6 border border-[#27344a] rounded-lg space-y-4 backdrop-blur-3xl opacity-80 hover:-translate-y-2 duration-500 hover:backdrop-blur-sm hover:opacity-100 hover:border-[#445c85]"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <div className="w-10">
@@ -309,7 +350,11 @@ const page = () => {
           </div>
         </div>
 
-        <div className="w-[350px] lg:w-[450px] md:w-[350px] p-6 border border-[#27344a] rounded-lg space-y-4 backdrop-blur-3xl opacity-80 hover:-translate-y-2 duration-500 cursor-pointer hover:backdrop-blur-sm hover:opacity-100 hover:border-[#445c85]">
+        <div
+          className="w-[350px] lg:w-[450px] md:w-[350px] p-6 border border-[#27344a] rounded-lg space-y-4 backdrop-blur-3xl opacity-80 hover:-translate-y-2 duration-500 hover:backdrop-blur-sm hover:opacity-100 hover:border-[#445c85]"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <div className="w-10">
@@ -454,7 +499,12 @@ const page = () => {
             <span>Javascript + CSS</span>
           </div>
         </div>
-        <div className="w-[350px] lg:w-[450px] md:w-[350px] p-6 border border-[#27344a] rounded-lg space-y-4 backdrop-blur-3xl opacity-80 hover:-translate-y-2 duration-500 cursor-pointer hover:backdrop-blur-sm hover:opacity-100 hover:border-[#445c85]">
+
+        <div
+          className="w-[350px] lg:w-[450px] md:w-[350px] p-6 border border-[#27344a] rounded-lg space-y-4 backdrop-blur-3xl opacity-80 hover:-translate-y-2 duration-500 hover:backdrop-blur-sm hover:opacity-100 hover:border-[#445c85]"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <div className="w-10">
