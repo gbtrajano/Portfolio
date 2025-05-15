@@ -28,9 +28,6 @@ const page = () => {
     };
   }, []);
 
-  // Tipando os eventos de mouse para os botões
-  const handleMouseEnter = () => setIsAnimating(true);
-  const handleMouseLeave = () => setIsAnimating(false);
   return (
     <main className="h-screen flex flex-col items-center relative">
       <div
