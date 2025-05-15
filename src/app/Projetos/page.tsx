@@ -6,7 +6,7 @@ import "../globals.css";
 import { useState, useEffect } from "react";
 import { useGlobalClickSound } from "../../hooks/useGlobalClickSound";
 
-const page = () => {
+const Page = () => {
   useGlobalClickSound();
   // Definindo o tipo do estado para a posição do cursor
   const [position, setPosition] = useState<{ x: number; y: number }>({
@@ -654,4 +654,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
