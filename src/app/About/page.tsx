@@ -28,6 +28,9 @@ const page = () => {
     };
   }, []);
 
+  const handleMouseEnter = () => setIsAnimating(true);
+  const handleMouseLeave = () => setIsAnimating(false);
+
   return (
     <main className="h-screen flex flex-col items-center relative">
       <div
@@ -47,7 +50,11 @@ const page = () => {
       </header>
       <div className="flex flex-col items-center justify-center">
         <img src="#" alt="#" />
-        <h1 className="text-white font-bold text-xl md:text-4xl">
+        <h1
+          className="text-white font-bold text-xl md:text-4xl"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           Gabriel Trajano
         </h1>
       </div>
