@@ -5,10 +5,8 @@ import { FaGithub, FaPencilAlt } from "react-icons/fa";
 import { FaDiamond } from "react-icons/fa6";
 import "./globals.css";
 import { useState, useEffect } from "react";
-import { useGlobalClickSound } from "../hooks/useGlobalClickSound";
 
 const Page = () => {
-  useGlobalClickSound();
   // Definindo o tipo do estado para a posição do cursor
   const [position, setPosition] = useState<{ x: number; y: number }>({
     x: 0,
