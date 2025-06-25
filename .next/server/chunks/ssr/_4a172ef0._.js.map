@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
-    {"offset": {"line": 24, "column": 0}, "map": {"version":3,"sources":["file:///home/gabriel/Documents/Projetos/Portfolio/src/app/About/page.tsx"],"sourcesContent":["import Link from \"next/link\";\nimport { FaArrowAltCircleLeft } from \"react-icons/fa\";\n\nconst page = () => {\n  return (\n    <main className=\"h-screen flex flex-col items-center relative\">\n      <header className=\"p-16 flex items-center justify-center gap-3 lg:gap-6\">\n        <Link href=\"/\">\n          <FaArrowAltCircleLeft\n            fill=\"#00a0ff\"\n            className=\"cursor-pointer text-3xl lg:text-5xl\"\n          />\n        </Link>\n        <h1 className=\"text-3xl md:text-5xl lg:text-6xl text-white font-extrabold text-center\">\n          Sobre mim\n        </h1>\n      </header>\n    </main>\n  );\n};\n\nexport default page;\n"],"names":[],"mappings":";;;;AAAA;AACA;;;;AAEA,MAAM,OAAO;IACX,qBACE,8OAAC;QAAK,WAAU;kBACd,cAAA,8OAAC;YAAO,WAAU;;8BAChB,8OAAC,4JAAA,CAAA,UAAI;oBAAC,MAAK;8BACT,cAAA,8OAAC,8IAAA,CAAA,uBAAoB;wBACnB,MAAK;wBACL,WAAU;;;;;;;;;;;8BAGd,8OAAC;oBAAG,WAAU;8BAAyE;;;;;;;;;;;;;;;;;AAM/F;uCAEe","debugId":null}}]
-}
