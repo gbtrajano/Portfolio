@@ -1,0 +1,19 @@
+body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f3f4f6; /* Cor de fundo leve */
+      }
+      /* Custom scrollbar for a nicer look */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #e0e0e0;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
